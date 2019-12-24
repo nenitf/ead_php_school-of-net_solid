@@ -14,3 +14,7 @@
 ## Single Responsability
 - Um objeto nunca deve ter mais de um fim ou propósito
 > ex.: o objeto html é encarregado de chamar a função correta para elaboração da tag, enquanto que as classes de tag (A, Img e Ul) sabem montar a string
+
+## Dependency Inversion
+- Módulos de alto nível não deveriam depender de módulos de baixo nível. Ambos deveriam depender de abstrações (classe abstrata ou interface).
+    - Abstrações não deveriam depender de detalhes. Detelhes devem depender de abstrações.
