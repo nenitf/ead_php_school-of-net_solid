@@ -4,11 +4,11 @@ namespace App\Solid;
 
 class Html
 {
-    public function img(string $src):string
+    public function __call(string $name, array $arguments):string
     {
-        return '<img src="'.$src.'">';
+        $class = '\App\Solid\Tags\\'.ucfirst($name);
+        return call_user_func_array([new $class, 'render'], $arguments);
     }
-
 }
 
 
