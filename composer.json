@@ -14,5 +14,10 @@
             "App\\Solid\\": "src"
         }
     },
+    "scripts": {
+        "windowsTest": "vendor\\bin\\phpunit --colors=always",
+        "linuxTest": "vendor/bin/phpunit --colors=always",
+        "test": [ "@windowsTest" ]
+    },
     "require": {}
 }
