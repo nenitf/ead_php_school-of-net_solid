@@ -18,3 +18,7 @@
 ## Dependency Inversion
 - Módulos de alto nível não deveriam depender de módulos de baixo nível. Ambos deveriam depender de abstrações (classe abstrata ou interface).
     - Abstrações não deveriam depender de detalhes. Detelhes devem depender de abstrações.
+
+## Liskov Substitution
+- Subtipos devem poder ser substituídos por seus tipos base. (Barbara Liskov)
+> ex.: Um quadrado é um tipo de retângulo, mas não pode ser substituído por um retângulo, ele quebra o princípio de Liskov.
