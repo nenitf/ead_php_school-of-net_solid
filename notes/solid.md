@@ -22,3 +22,7 @@
 ## Liskov Substitution
 - Subtipos devem poder ser substituídos por seus tipos base. (Barbara Liskov)
 > ex.: Um quadrado é um tipo de retângulo, mas não pode ser substituído por um retângulo, ele quebra o princípio de Liskov.
+
+## Interface Segregation
+- Nenhum cliente deve ser forçado a depender de métodos que ele não use
+    - Devemos utilizar interfaces menores e mais simples, mesmo que com métodos duplicados
